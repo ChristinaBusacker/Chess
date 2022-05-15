@@ -1,0 +1,23 @@
+:host {
+    max-width: 340px;
+    display: block;
+    padding: 20px;
+
+    & div {
+        & img {
+            width: 48px;
+            margin: 0 10px;
+        }
+    }
+
+    & button {
+        margin: 20px 0;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: #476930;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

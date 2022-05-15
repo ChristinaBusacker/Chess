@@ -1,0 +1,46 @@
+:host {
+    & app-game-stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+        background-color: #eaeaea;
+        color: #222222;
+    }
+
+    h1 {
+        font-size: 36px;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        user-select: none;
+    }
+
+    &.dark {
+        & app-game-stage {
+            background-color: #222222;
+            color: #eaeaea;
+        }
+
+        & h1 {
+            color: #eaeaea;
+        }
+    }
+
+    & app-game-log {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        width: 250px;
+    }
+
+    h1 {
+    }
+}
